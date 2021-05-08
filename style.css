@@ -1,16 +1,31 @@
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
 
+#spc{
+  min-height: 900px;
+}
 
 .flexContainer{
   display: flex;
 }
 
 .bb{
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid lightgray;
 }
 
 .sb{
   justify-content: space-between;
+}
+
+.ma{
+  margin: auto 0;
+}
+
+.invis{
+  background: transparent;
+  border: none;
 }
 
 /* header */
@@ -18,14 +33,63 @@
   height: 64px;
   width: 100vw;
   padding: 8px;
+
 }
 
-/* fake logo */
-#logo{  
-  width: 25px;
-  
+/* container for logo and "Drive" */
+#logoContainer{
+  min-width: 208px;
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+
 }
 
+#logoContainer a{
+  text-decoration: none !important;
+  color: black;
+}
+
+#logo{
+  display: flex; 
+}
+
+/* search bar container */
+#search{
+  background-color: lightgray;
+  border-radius: 10px;
+  min-width: 720px;
+  padding: 10px;
+  margin-left: 10px; 
+  display: flex;
+  align-items: center;
+}
+#searchBar{
+  margin-left: 15px;
+  min-width: 570px;
+  min-height: 28px;
+  font-size: 16px;
+}
+
+#drL{
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+#lb{
+  margin-left: auto;
+}
+
+#rMn{
+  min-width:245px ;
+  display: flex;
+  align-items: center;
+}
+#rMn button{
+  margin:0 10px;
+}
 
 
 
@@ -163,4 +227,10 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
