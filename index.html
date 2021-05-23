@@ -5,37 +5,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Google Drive front end clone">
   <script src="https://kit.fontawesome.com/3d802f28bb.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link rel="icon" href="assests/favicon.ico" type="image/ico"/>
+  <link rel="shortcut icon" href="assests/favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" type="text/css" href="assests/style.css"/>
   <title>My Drive - Google Drive</title>
 </head>
 <body>
   <div id="header" class="bb flexContainer sb">
     <div class="flexContainer ">
-      <div id="logoContainer" class="sb">
+      <div id="logoContainer" class="sb aic">
         <a id="logo" aria-label="Drive" href="#">
           <i class="fab fa-google-drive fa-2x" style="margin-left: 20px;"></i>
-          <div id="drL">Drive</div>
+          <div class="aic" id="drL">Drive</div>
         </a>
       </div>
-      <div id="search">
-        <button class="invis fas fa-search"></button>
+      <div class="aic" id="search">
+        <button class="invis fas fa-search fa-lg"></button>
         <input class="invis" placeholder="Search in Drive"name="search" id="searchBar"/>
         <button id="lb" class="invis fas fa-caret-down"></button>
       </div>
     </div>
-    <div id="rMn" class="flexContainer sb">
+    <div id="rMn" class="flexContainer sb aic">
       <div>
-        <button class="invis fas fa-question-circle"></button>
-        <button class="invis fas fa-cog"></button>
+        <button class="invis fas fa-question-circle fa-lg"></button>
+        <button class="invis fas fa-cog fa-lg"></button>
       </div>
       <div>
-        <button class="invis fas fa-th"></button>
-        <button class="invis fas fa-user-circle"></button>
+        <button class="invis fas fa-th fa-lg"></button>
+        <button class="invis fas fa-user-circle fa-lg"></button>
       </div>
     </div>
   </div>
   <main>
-    <div id="spc"></div>
+    <div id="spc" class="flexContainer sb">
+      <div class="flexContainer fc" id="leftTray">
+        <button class="invis flexContainer aic" id="newBtn">
+          <div class="fas fa-plus fa-2x"></div>
+          <div style="font-size: 14px; margin-left: 5px;">New</div>
+        </button>
+        <div class="flexContainer fc" id="leftNav">
+          <div class="lti aic">
+            <div class="lspc aic fas fa-caret-right"></div>
+            <div class="fas fa-cloud-upload-alt"></div>
+            <div class="lnbt aic">My Drive</div>
+          </div>
+          <div class="lti aic">
+            <div class="lspc aic"></div>
+            <div class="fas fa-user-friends"></div>
+            <div class="lnbt aic">Shared with me</div>
+          </div>
+          <div class="lti aic">
+            <div class="lspc aic"></div>
+            <div class="fas fa-clock"></div>
+            <div class="lnbt aic">Recent</div>
+          </div>
+          <div class="lti aic">
+            <div class="lspc aic"></div>
+            <div class="fas fa-star"></div>
+            <div class="lnbt aic">Starred</div>
+          </div>
+          <div class="lti aic">
+            <div class="lspc aic"></div>
+            <div class="fas fa-trash"></div>
+            <div class="lnbt aic">Trash</div>
+          </div>
+          <div style="width: 100%; margin: 8px 0; border-top: 1px solid #dadce0;"></div>
+          <div class="lti aic">
+            <div class="lspc aic"></div>
+            <div class="fas fa-cloud"></div>
+            <div class="lnbt aic">Storage</div>
+          </div>
+          <div class="lti aic fc">
+            <div class="lspc aic"></div>
+            <div style="margin-top: 15px; border: 2px solid lightgrey; width: 178px; border-radius: 30px;"></div>
+            <div style="margin-top: 10px; margin-right: 53px; font-size: 12px;">33.2 MB of 15 GB used</div>
+            <button id="storageBtn">
+              <div class="aic">Buy storage</div>
+            </button>
+          </div>
+        </div>
+      </div>
+    <div style="width: 100%;">
+      <div class="aic flexContainer sb" id="centerBar">
+        <button id="mdcb" class="aic invis" >
+          <div class="aic">My Drive</div>
+          <div style="padding-left: 10px;" class="fas fa-caret-down"></div>
+        </button>
+        <div>
+          <button class="fas fa-lg fa-list mr invis"></button>
+          <button class="fas fa-info-circle fa-lg mr invis"></button>
+        </div>
+      </div>
+      <div class="flexContainer" id="content">
+        <div>hmm</div>
+      </div>
+      </div>
+      <div id="rightBar" class="flexContainer fc sb aic">
+        <div class="aic fc">
+          <div>
+            <button class="invis fas fa-calendar fa-lg mtab"></button>
+          </div>
+          <div>
+            <button class="invis fas fa-lightbulb fa-lg mtab"></button>
+          </div>
+          <div>
+            <button class="invis fas fa-pen fa-lg mtab"></button>
+          </div>
+          <div>
+            <div style="width: 20px;" class="bb mtab"></div>
+          </div>
+          <div>
+            <button class="invis fas fa-plus mtab"></button>
+          </div>
+        </div>
+        <div style="min-height: 50px;">
+          <button class="invis fas fa-caret-right"></button>
+        </div>
+      </div>
+    </div>
   </main>
 </body>
 </html>
